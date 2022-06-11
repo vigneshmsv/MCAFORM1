@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>MCA login form</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+ </head>
+<body >
+    <script>
+       function msg(){
+alert("hello");
+}
+function valid(){
+    var a=document.ff.name.value;
+    if(a=="m"|| a==""){
+        alert("Enter your name");
+    }
+}
+    </script>
+    <div id="header"><h5 id="HElP"> <a href="help.html " target="_top" >Help </a></h5></div>
+    <div id="main">
+        <div id="form">
+            <form id="ff">
+                <label class="label" for="name" ><b>Name:</b></label><br><br>
+                <input type="text" class="input" name="name" placeholder="Ex:Vishnu G">
+                <br><br>
+                <label class="label" for="password"><b>Password</b>:</label><br><br>
+                <input class="input" type="password" name="password"><br>
+                <br>
+                <button id="login" onclick="valid()">login</button>
+            </form>
+        </div>
+        <input type="button" value="d" onclick="valid()" >
+    </div>
+</body>
